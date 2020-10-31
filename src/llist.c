@@ -854,3 +854,21 @@ int llist_merge ( llist first, llist second)
 	assert (1 == 0); // Fail, function not implemented yet.
 	return LLIST_NOT_IMPLEMENTED;
 }
+
+
+/*int main()
+{
+	llist queue=llist_queue_init();
+	char test[10];
+	int i;
+	for( i=0;i<sizeof(test);i++){
+		test[i]=i;
+		llist_queue(queue,&test[i]);
+		printf("queue size =%d\n",llist_queue_size(queue));
+	}
+	for( i=0;i<(sizeof(test));i++){
+		char *p=llist_dequeue(queue);
+		printf("queue size =%d\n",llist_queue_size(queue));
+		printf("%p %d\n",p,p==0?0:*p);
+	}
+}*/
